@@ -1,19 +1,6 @@
-"
-" Install vim-plug Plugin Manager
-"md ~\vimfiles\autoload
-"$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-"(New-Object Net.WebClient).DownloadFile(
-"  $uri,
-"  $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
-"    "~\vimfiles\autoload\plug.vim"
-"  )
-")
+
 set nocompatible              " be iMproved, required
 
-call plug#begin()
-Plug 'tpope/vim-sensible'
-"Plug 'junegunn/vim-easy-align'
-call plug#end()
 "
 
 "-------MY SETUP START HERE--------"
