@@ -1,0 +1,27 @@
+
+# install winget install difft
+[diff]
+    external = difft
+	tool = meld
+[merge]
+	tool = meld
+[difftool "bc"]
+    path = c:/Program Files/Beyond Compare 4/bcomp.exe
+[mergetool "bc"]
+    path = c:/Program Files/Beyond Compare 4/bcomp.exe
+    keepBackup = false
+[difftool "meld"]
+    path = "C:/Program Files (x86)/Meld/meld/meld.exe"
+[mergetool "meld"]
+    path = "C:/Program Files (x86)/Meld/meld/meld.exe"
+    keepBackup = false
+[core]
+	editor = notepad
+
+# for below to work you have to be under some git repo under C:/repos/
+# directly trying to check the config from C:/repos/ do not work
+[includeIf "gitdir:C:/repos/"]
+    path = ~/personal.gitconfig
+
+[includeIf "gitdir:C:/work/"]
+    path = ~/work.gitconfig
